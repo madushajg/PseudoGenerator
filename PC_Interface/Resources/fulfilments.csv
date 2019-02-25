@@ -1,0 +1,31 @@
+Accuracy,"define variable predictions and predict clf for X_test
+use predictions to obtain accuracy"
+Confusion Matrix,define variable cm and generate confusion matrix for y_test with predictions
+Define Algorithm,
+Define data manipulation library,
+Define K in KNN,
+Define language,
+Define multidimensional array operator,
+Else condition,"if not,"
+End,End of the Pseudocode
+End of for loop,for loop ends
+End of IF,end of if
+End of while loop,end of while
+For Loop,
+IF condition - not,
+IF condition - simple,
+IF condition - statement (!=),
+IF condition - statement (<),
+IF condition - statement (=),
+IF condition - statement (>),
+import ML Algorithm,
+import ML Library,
+Import Specific Modules,
+Load dataset,
+Normalization-General,
+Numerization-General,
+Remove Null Target Classes,
+Replace NaN values,
+SplitDataset,
+Start Algorithm,
+While_Loop,

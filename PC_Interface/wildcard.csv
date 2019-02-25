@@ -1,0 +1,5 @@
+TARGET_CLASS,type
+ATTRIBUTES,['sq__ft', 'sale_date']
+SPLIT_RATIO,0.76
+DATASET,Sacramentorealestatetransactions.csv
+FEATURE_SET,['zip', 'beds', 'baths', 'price', 'latitude', 'longitude', 'state']

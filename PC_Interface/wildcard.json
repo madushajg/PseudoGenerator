@@ -1,0 +1,1 @@
+{"ALGORITHM": "SVM", "DATASET": "StudentsPerformance.csv", "ATTRIBUTES": ["gender", "\"race/ethnicity\"", "\"lunch\"", "\"test preparation course\"", "\"math score\"", "\"writing score\""], "TARGET_CLASS": "\"parental level of education\"", "SPLIT_RATIO": 0.7}

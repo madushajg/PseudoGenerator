@@ -1,0 +1,3 @@
+
+drop attributes ATTRIBUTES from dataframe
+define variable target_class and assign TARGET_CLASS
