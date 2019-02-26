@@ -15,7 +15,6 @@ app.secret_key = "AS9UjjJI0J0JS9j"
 
 PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 SESSION_ID = 'session_pc'
-# UPLOAD_FOLDER = '/home/madusha/'
 UPLOAD_FOLDER = '/media/madusha/DA0838CA0838A781/PC_Interface/Resources'
 ALLOWED_EXTENSIONS = set(['csv', 'txt'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

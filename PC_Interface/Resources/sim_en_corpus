@@ -446,3 +446,25 @@ split dataframe feature set and target class,SplitDataset
 "my_list.append(runs, wickets, total, strike_rate)",Append elements to a list
 add element1 to element_list,Append elements to a list
 "append age, height, skills to the list named my_list",Append elements to a list
+end of for,End of for loop
+conclude for loop,End of for loop
+break the for loop,End of for loop
+stop for loop,End of for loop
+terminate for loop,End of for loop
+escape from for loop,End of for loop
+end of for loop,End of for loop
+end of if condition,End of IF
+escape from if,End of IF
+close the if condition,End of IF
+terminate if statement,End of IF
+stop if condition,End of IF
+end of else,End of IF
+end of IF,End of IF
+conclude IF condition,End of IF
+end of while,End of while loop
+escape from while loop,End of while loop
+terminate while loop,End of while loop
+end of while loop,End of while loop
+stop while loop,End of while loop
+break the while loop,End of while loop
+conclude while loop,End of while loop

@@ -11,12 +11,15 @@ PROJECT_ID = os.getenv('GCLOUD_PROJECT')
 SESSION_ID = 'session_pc'
 
 print('Credendtials from environ: {}'.format(credentials))
+directory_path = '/media/madusha/DA0838CA0838A781/PC_Interface/'
 
 
 class PseudoGen:
     extract = entity_extractor.Extractor()
-    identification = open('/media/madusha/DA0838CA0838A781/PC_Interface/Resources/identification').read()
+    identification = open(directory_path+'Resources/identification').read()
     idnt_map = {}
+    se_fulfilment = open(directory_path+'Resources/fulfilments.csv').read()
+    fulfilment_map = {}
     wildcard = {"TARGET_CLASS": '', 'DATASET': '',  'ALGORITHM': 'SVM', 'SPLIT_RATIO': 0.7}
     st_array, st_values, varn, var_value, rn_array, element, rn_num = ([] for i in range(7))
 
@@ -27,6 +30,14 @@ class PseudoGen:
             idnt_map[content[0]] = (content[1])
         except:
             print("Unable to locate identification map")
+
+    for l, line in enumerate(se_fulfilment.split("\n")):
+        try:
+            if line is not '':
+                content = line.split(',')
+            fulfilment_map[content[0]] = (content[1])
+        except:
+            print("Unable to locate fulfilment map")
 
 
 def line_manipulator(pc_lines, ds_name):
@@ -74,6 +85,8 @@ def detect_intent_texts(project_id, session_id, text, language_code, pseudo_gen)
         fulfillment = find_similar_intent(str(query_text))
         response.query_result.intent.display_name = fulfillment[0]
         print('Fulfillment text (by SE): {} (similarity: {})\n'.format(fulfillment[0], fulfillment[1]))
+        if pseudo_gen.idnt_map[fulfillment[0]] == 'N' or pseudo_gen.idnt_map[fulfillment[0]] == 'DF':
+            response.query_result.fulfillment_text = fulfillment[0]
 
     pseudo_code = generate_pseudo_code(response, pseudo_gen)
     return pseudo_code
@@ -83,7 +96,7 @@ if __name__ == '__main__':
     lines = ['initialize integer variable named F with value 90',
              'add \'They are competetive\' to variable mal', 'assign 89.6 to variable rt',
              'find accuracy of model']
-    # full_corpus = open('/media/madusha/DA0838CA0838A781/PC_Interface/entities/testing')
+    # full_corpus = open(directory_path+'entities/testing')
     # lines = [line for line in full_corpus.readlines() if line.strip()]
     pg = PseudoGen()
     # for line in lines:

@@ -1,3 +1,7 @@
 
-drop attributes ATTRIBUTES from dataframe
+Define data manipulation library
+define variable clf and classify X_train y_train using SVM
+define variable predictions and predict clf for X_test use predictions to obtain accuracy
+define variable split and assign SPLIT_RATIO
 define variable target_class and assign TARGET_CLASS
+define array features and assign FEATURE_SET

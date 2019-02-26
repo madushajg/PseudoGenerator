@@ -34,28 +34,6 @@ def enter_new_entity(entities, url_ds, entity_name):
     print("Entities successfully added")
 
 
-# def enter_filename_entity(entities, url):
-#     head = """{
-#   "entries": ["""
-#
-#     tail = """\n  ],
-#   "name": "Dataset_Name"
-# }"""
-#
-#     val = "{\n      \"value\": \"999\" \n    },{\n      \"value\": \"444\" \n    }"
-#     val_head = ", \n    {\n      \"value\": \""
-#     val_tail = "\" \n    }"
-#     for a in entities:
-#         entry = val_head + a + val_tail
-#         val = val + entry
-#
-#     payload = head + val + tail
-#     print(payload)
-#     r = requests.put(url, data=payload, headers=header)
-#     pprint(r.json())
-#     print("Entities successfully added")
-
-
 def delete_entries(entities, url):
     body = """[\"9999\""""
     for a in entities:

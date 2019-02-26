@@ -1,1 +1,1 @@
-{"ALGORITHM": "SVM", "DATASET": "StudentsPerformance.csv", "ATTRIBUTES": ["gender", "\"race/ethnicity\"", "\"lunch\"", "\"test preparation course\"", "\"math score\"", "\"writing score\""], "TARGET_CLASS": "\"parental level of education\"", "SPLIT_RATIO": 0.7}
+{"FEATURE_SET": ["SepalLengthCm", "SepalWidthCm", "PetalWidthCm"], "SPLIT_RATIO": 0, "DATASET": "Iris.csv", "TARGET_CLASS": "Species", "ALGORITHM": "SVM"}

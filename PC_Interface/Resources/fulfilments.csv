@@ -1,31 +1,31 @@
 Accuracy,"define variable predictions and predict clf for X_test
 use predictions to obtain accuracy"
 Confusion Matrix,define variable cm and generate confusion matrix for y_test with predictions
-Define Algorithm,
-Define data manipulation library,
-Define K in KNN,
-Define language,
-Define multidimensional array operator,
+Define Algorithm,None
+Define data manipulation library,import library dataframe
+Define K in KNN,None
+Define language,None
+Define multidimensional array operator,import library multidimentional array
 Else condition,"if not,"
 End,End of the Pseudocode
 End of for loop,for loop ends
 End of IF,end of if
 End of while loop,end of while
-For Loop,
-IF condition - not,
-IF condition - simple,
-IF condition - statement (!=),
-IF condition - statement (<),
-IF condition - statement (=),
-IF condition - statement (>),
-import ML Algorithm,
-import ML Library,
-Import Specific Modules,
-Load dataset,
-Normalization-General,
-Numerization-General,
-Remove Null Target Classes,
-Replace NaN values,
-SplitDataset,
-Start Algorithm,
-While_Loop,
+For Loop,None
+IF condition - not,if condition is false
+IF condition - simple,if condition is true
+IF condition - statement (!=),if condition1 and condition2 are different
+IF condition - statement (<),if obj1 smaller than obj2
+IF condition - statement (=),if obj1 equals obj2
+IF condition - statement (>),if obj1 greater than obj2
+import ML Algorithm,None
+import ML Library,None
+Import Specific Modules,None
+Load dataset,define variable df and read dataset DATASET csv file
+Normalization-General,normalize X_train using scaler and reassign X_train
+Numerization-General,numerize daf attribute and reassign daf attribute
+Remove Null Target Classes,remove datapoints that have NULL target_class from the dataframe and reassign dataframe
+Replace NaN values,replace NaN values and reassign dataframe
+SplitDataset,split dataframe feature set and target class by SPLIT_RATIO ratio and assign to X_train X_test y_train y_test
+Start Algorithm,"define variable clf and classify X_train, y_train using ALGORITHM"
+While_Loop,"while, condition is True"
